@@ -81,7 +81,7 @@ int print_string(va_list types, char buffer[],
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width.
- * @precision: Precision specification
+* @precision: Precision specification
  * @size: Size specifier
  * Return: Number of chars printed
  */
@@ -125,7 +125,7 @@ int print_int(va_list types, char buffer[],
 	num = (unsigned long int)n;
 
 	if (n < 0)
-	{
+{
 		num = (unsigned long int)((-1) * n);
 		is_negative = 1;
 	}
@@ -169,7 +169,7 @@ int print_binary(va_list types, char buffer[],
 	m = 2147483648; /* (2 ^ 31) */
 	a[0] = n / m;
 	for (i = 1; i < 32; i++)
-	{
+{
 		m /= 2;
 		a[i] = (n / m) % 2;
 	}
